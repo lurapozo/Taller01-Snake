@@ -5,6 +5,8 @@ import java.awt.Dimension;
 import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 
+import javax.swing.text.AttributeSet.ColorAttribute;
+
 
 /**
  * Simple classic game of snake. The snake is put in the middle of the game pane
@@ -52,7 +54,7 @@ public class SnakeModel extends GameModel {
 	private static final GameTile FRUIT_TILE = new RoundTile(new Color(180, 0, 0), Color.RED, 3.0);
 
 	/** Graphical representation of the snake */
-	private static final GameTile SNAKE_TILE = new RectangularTile(Color.darkGray);
+	private static final GameTile SNAKE_TILE = new RectangularTile(new Color(102,51,0));
 
 	/** Graphical representation of the snake's head */
 	private static final GameTile SNAKE_HEAD_TILE = new RectangularTile(Color.GRAY);
